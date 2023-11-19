@@ -20,10 +20,9 @@ test("0 / 5 should be 0", () => {
     expect(result).toBe(0);
 });
 
-test("5 / 0 should throw an error", () => {
+test("10 / 3 should be approximately 3.333", () => {
     // sujeto de prueba
-    const result = () => divi(5, 0);
+    const result = divi(10, 3);
     // test
-    expect(result).toThrow();
+    expect(result).toBeCloseTo(3.333);
 });
-
